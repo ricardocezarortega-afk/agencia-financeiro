@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AgênciaPro — Gestão Financeira</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="app" id="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="logo">
+          <div class="logo-icon"><i class="ti ti-chart-pie"></i></div>
+          <span>AgênciaPro</span>
+        </div>
+      </div>
+      <nav class="nav">
+        <div class="nav-section">Principal</div>
+        <div class="nav-item active" data-view="dashboard"><i class="ti ti-layout-dashboard"></i> Dashboard</div>
+        <div class="nav-item" data-view="clientes"><i class="ti ti-users"></i> Clientes</div>
+        <div class="nav-item" data-view="contratos"><i class="ti ti-file-text"></i> Contratos</div>
+        <div class="nav-section">Financeiro</div>
+        <div class="nav-item" data-view="receber"><i class="ti ti-arrow-down-circle"></i> Contas a Receber</div>
+        <div class="nav-item" data-view="pagar"><i class="ti ti-arrow-up-circle"></i> Contas a Pagar</div>
+        <div class="nav-item" data-view="fluxo"><i class="ti ti-arrows-exchange"></i> Fluxo de Caixa</div>
+        <div class="nav-item" data-view="dre"><i class="ti ti-report-analytics"></i> DRE</div>
+        <div class="nav-section">Análise</div>
+        <div class="nav-item" data-view="rentabilidade"><i class="ti ti-trophy"></i> Rentabilidade</div>
+        <div class="nav-item" data-view="kpis"><i class="ti ti-target"></i> KPIs</div>
+        <div class="nav-section">Config.</div>
+        <div class="nav-item" data-view="centros"><i class="ti ti-building"></i> Centros de Custo</div>
+        <div class="nav-item" data-view="usuarios"><i class="ti ti-shield"></i> Usuários</div>
+      </nav>
+    </aside>
+    <div class="main">
+      <div class="topbar">
+        <div class="topbar-left">
+          <span class="page-title" id="page-title">Dashboard</span>
+          <span class="breadcrumb" id="breadcrumb">Visão geral</span>
+        </div>
+        <div class="topbar-right">
+          <div class="btn-icon"><i class="ti ti-bell"></i></div>
+          <div class="btn-icon"><i class="ti ti-search"></i></div>
+          <div class="avatar" id="avatar-initials">LC</div>
+        </div>
+      </div>
+      <div class="content" id="content"></div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
