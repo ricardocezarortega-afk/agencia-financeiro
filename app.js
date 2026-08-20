@@ -1,5 +1,5 @@
 const SUPABASE_URL = 'https://tvezkcyhfupjzfwgjuze.supabase.co';
-const SUPABASE_KEY = 'sb_publishable_tPauTuj7i3OJVJNq-Wey8w_SzmlI5unhUNMx';
+const SUPABASE_KEY = 'sb_publishable_tPauTuj7i3OJVJNq-Wey8w_SzmL1pQW';
 const sb = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 const views = {
